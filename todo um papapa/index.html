@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mudarDiv(){
+            document.getElementById('foto').style.backgroundImage="url(img/zaza.jpeg)";
+            let vid = document.getElementById('musica1');
+            vid.autoplay = true;
+            vid.load();
+        }
+
+        function mudarBody(){
+            document.getElementById('mudarFundo').style.backgroundImage="url(img/gays.jpeg)"
+        }
+
+        function mudarDiv2(){
+            document.getElementById('foto').style.backgroundImage="url(img/ikki.jpeg)";
+            let vid = document.getElementById('musica');
+            vid.autoplay = true;
+            vid.load();
+        }
+
+        function mudarDiv3(){
+            document.getElementById('foto').style.backgroundImage="url(img/isac.jpeg)";
+            let vid = document.getElementById('musica2');
+            vid.autoplay = true;
+            vid.load();
+        }
+    </script>
+</head>
+<body class="body" id="mudarFundo">
+    <h3 class="organizarBotoes">
+        <button type="button" id="zazaEhGay" onclick="mudarDiv()">Clica aqui</button>
+        <button type="button" id="mudarBody" onclick="mudarBody()">Clique Aqui</button>
+        <button type="button" id="ikkiEhGay" onclick="mudarDiv2()">Ikki</button>
+        <button type="button" id="isacRobozao" onclick="mudarDiv3()">Isac</button>
+        <hr />
+        <div class="pequenaDiv" id="foto">Zaza</div>
+    </h3>
+</body>
+<audio src="sound/tema-triste-chaves.mp3" id="musica1"></audio>
+<audio src="sound/cyberpunk-2077.mp3" id="musica"></audio>
+<audio src="sound/puxa-frango-ringtone.mp3" id="musica2"></audio>
+</html>
